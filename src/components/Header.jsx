@@ -5,11 +5,10 @@ function Header() {
     return (
         <header>
           <img src={logo} alt="logo kasa" className="logo" />
-        <nav className="navbar">
-            <Link to="/">Accueil</Link>
-            <Link to="/about">A propos</Link>
-        </nav>
-
+          <nav className="navbar">
+              <Link to="/" className="nav-item">Accueil</Link>
+              <Link to="/about" className="nav-item">A propos</Link>
+          </nav>
         </header>
     )
 }

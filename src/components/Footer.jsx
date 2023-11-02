@@ -1,7 +1,14 @@
+import logo from '../data/logo_white.png'
 
 function Footer() {
     return (
-        <footer> FOOTER </footer>
+        <footer>
+          <img src={logo} alt="logo kasa" className="logo" />
+          <p>
+          © 2020 Kasa. All rights reserved
+          </p>
+
+        </footer>
     )
 }
 

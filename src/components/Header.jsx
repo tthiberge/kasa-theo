@@ -13,7 +13,7 @@ function Header() {
               <Link to="/about" className="nav-item">A propos</Link>
           </nav>
         </header>
-    )
+    ) 
 }
 
 export default Header

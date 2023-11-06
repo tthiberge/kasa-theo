@@ -1,17 +1,11 @@
+@use './components/Header.scss';
+
 * {
   font-family: Montserrat;
   color: #FF6060;
 }
 
-header {
-  display: flex;
-  justify-content: space-between;
-  width: 100%;
-  max-width: 1240px;
-  align-items: center;
-  margin-top: 45px;
-  margin-bottom: 50px;
-}
+
 
 footer {
   display: flex;
@@ -40,7 +34,7 @@ footer {
     margin: 0px;
   }
 }
- 
+
 .logo {
   height: 68px;
 }

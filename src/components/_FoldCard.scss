@@ -1,0 +1,30 @@
+
+.container-foldable {
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  border-radius: 10px;
+  background-color: #FF6060;
+  padding: 10px 20px 10px 10px;
+
+  color: white !important;
+}
+
+.unfold-desccription {
+  display: flex;
+  flex-grow: 1;
+  width: 100%;
+  background: blue;
+
+  p {
+    color: black !important;
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 500;
+  }
+
+}
+
+.unfold-content {
+
+}

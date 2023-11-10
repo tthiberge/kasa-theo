@@ -2,6 +2,7 @@
 @use './components/Footer.scss';
 @use './components/LocationCard.scss';
 @use './components/Banner.scss';
+@use './components/FoldCard.scss';
 @use './pages/Error.scss';
 @use './pages/Home.scss';
 @use './pages/About.scss';
@@ -11,6 +12,11 @@
   font-family: Montserrat;
   color: #FF6060;
 }
+
+p {
+  margin: 0px;
+}
+
 
 #root {
   display: flex;

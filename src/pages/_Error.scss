@@ -1,0 +1,32 @@
+.error-container {
+  margin-block: 139px; // When two margins overlap, the largest is considered
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  gap: 139px;
+  align-items: center;
+  width: 100%;
+  max-width: 1240px;
+}
+
+.error-404 {
+  width: 597px;
+  height: 263px;
+}
+
+.not-found {
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 142.6%;
+}
+
+.error-to-home {
+  font-family: Montserrat;
+font-size: 18px;
+font-style: normal;
+font-weight: 500;
+line-height: 142.6%; /* 25.668px */
+text-decoration-line: underline;
+cursor: pointer;
+}

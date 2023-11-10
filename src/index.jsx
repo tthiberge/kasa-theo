@@ -14,14 +14,16 @@ const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
     <Router>
-      <Header />
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/about" element={<About />} />
-        <Route path="/location/:id" element={<Location />} />
-        <Route path="*" element={<Error />} />
-      </Routes>
-      <Footer />
+      <div className='global-container'>
+        <Header />
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/about" element={<About />} />
+          <Route path="/location/:id" element={<Location />} />
+          <Route path="*" element={<Error />} />
+        </Routes>
+        <Footer />
+      </div>
     </Router>
   </React.StrictMode>
 );

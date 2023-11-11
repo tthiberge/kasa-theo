@@ -12,6 +12,7 @@ function Home() {
         height="223px"
         src={home_bg}
         text="Chez vous, partout, ailleurs"
+        marginTop="50px"
       />
       <div className='subgrid'>
         <div className='locations-grid'>

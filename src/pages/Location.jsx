@@ -25,9 +25,8 @@ function Location() {
   return (
     <div>
       <Carroussel
-      height="415px"
-      src={location.cover}
-      text="hdhdhdhdh"
+        src={location.cover}
+        marginTop="50px"
       />
 
       <div className='location-informations'>

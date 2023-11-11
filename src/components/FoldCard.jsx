@@ -1,16 +1,19 @@
-import { useState } from 'react'
 import arrow_folded from '../data/arrow_back.png'
 import arrow_unfolded from '../data/arrow_front.png'
 
+function FoldCard({title, item, unfoldItem, setUnfoldItem, size} ) {
 
+  const fontSize = {
+    fontSize: size ? '24px' : '18px'
+  }
 
-
-function FoldCard({title, item, unfoldItem, setUnfoldItem} ) {
+  console.log(size)
+  console.log(fontSize)
 
   return (
     <div className='container-foldable'>
       <div className='unfold-title'>
-        <p>{title}</p>
+        <p style={fontSize}>{title}</p>
         <span
           onClick={() => setUnfoldItem(!unfoldItem)}
         >
@@ -24,7 +27,7 @@ function FoldCard({title, item, unfoldItem, setUnfoldItem} ) {
 
       { unfoldItem ? (
       <div className='unfold-content' >
-        <p>{item}</p>
+        <p style={fontSize}>{item}</p>
       </div>
       ) : null
       }

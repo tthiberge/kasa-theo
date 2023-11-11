@@ -7,7 +7,6 @@ function About() {
     <Banner
     height="223px"
     src={about_bg}
-    alt="Landscape banner"
     />
     );
 }

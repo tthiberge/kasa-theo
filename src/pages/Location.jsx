@@ -3,7 +3,7 @@ import { useParams } from 'react-router-dom'
 import { useState } from 'react'
 
 import locations from '../data/locations.json'
-import Banner from '../components/Banner'
+import Carroussel from '../components/Carroussel'
 import FoldCard from '../components/FoldCard'
 import RatingScale from '../components/RatingScale'
 
@@ -24,10 +24,10 @@ function Location() {
 
   return (
     <div>
-      <Banner
+      <Carroussel
       height="415px"
       src={location.cover}
-      alt="Location banner"
+      text="hdhdhdhdh"
       />
 
       <div className='location-informations'>

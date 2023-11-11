@@ -5,13 +5,11 @@ import arrow_unfolded from '../data/arrow_front.png'
 
 
 
-function FoldCard({title, item, itemType, unfoldItem, setUnfoldItem} ) {
-
-  console.log(unfoldItem)
+function FoldCard({title, item, unfoldItem, setUnfoldItem} ) {
 
   return (
     <div className='container-foldable'>
-      <div className='unfold-description'>
+      <div className='unfold-title'>
         <p>{title}</p>
         <span
           onClick={() => setUnfoldItem(!unfoldItem)}
@@ -25,8 +23,8 @@ function FoldCard({title, item, itemType, unfoldItem, setUnfoldItem} ) {
       </div>
 
       { unfoldItem ? (
-      <div className='unfold-content'>
-        {item}
+      <div className='unfold-content' >
+        <p>{item}</p>
       </div>
       ) : null
       }

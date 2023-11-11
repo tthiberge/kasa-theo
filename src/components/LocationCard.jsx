@@ -2,9 +2,11 @@
 
 function LocationCard( { title } ) {
   return (
-    <li className='location-item'>
-      { title }
-    </li>
+    <div className="location-item-underlay">
+      <li className='location-item'>
+        <p>{ title }</p>
+      </li>
+    </div>
   );
 }
 

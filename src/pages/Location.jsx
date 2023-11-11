@@ -15,9 +15,11 @@ function Location() {
   const [unfoldDescription, setUnfoldDescription] = useState(false)
   const [unfoldEquipment, setUnfoldEquipment] = useState(false)
 
-  const equipmentList = location.equipments.map(equipment =>
-    '${equipment} \n'
-    )
+  const stringifiedArray = (array) => {
+    return array.map(element => (
+        <p> {element} </p>
+      ))
+  }
 
 
   return (
@@ -61,14 +63,13 @@ function Location() {
         <FoldCard
           title="Description"
           item={location.description}
-          itemType="string"
           unfoldItem={unfoldDescription}
           setUnfoldItem={setUnfoldDescription}
         />
         <FoldCard
           title="Equipements"
-          item={location.equipments}
-          itemType="array"
+          item={stringifiedArray(location.equipments)}
+          height="250px"
           unfoldItem={unfoldEquipment}
           setUnfoldItem={setUnfoldEquipment}
         />

@@ -3,7 +3,7 @@ import { useParams } from 'react-router-dom'
 import { useState } from 'react'
 
 import locations from '../data/locations.json'
-import Carroussel from '../components/Carroussel'
+import Carrousel from '../components/Carrousel'
 import FoldCard from '../components/FoldCard'
 import RatingScale from '../components/RatingScale'
 
@@ -24,7 +24,7 @@ function Location() {
 
   return (
     <div>
-      <Carroussel
+      <Carrousel
         src={location.cover}
         marginTop="50px"
       />

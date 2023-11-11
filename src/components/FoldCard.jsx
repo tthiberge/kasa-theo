@@ -1,19 +1,20 @@
 import arrow_folded from '../data/arrow_back.png'
 import arrow_unfolded from '../data/arrow_front.png'
 
-function FoldCard({title, item, unfoldItem, setUnfoldItem, size} ) {
+function FoldCard({title, item, unfoldItem, setUnfoldItem, fontSize, lineHeight} ) {
 
-  const fontSize = {
-    fontSize: size ? '24px' : '18px'
+  const style = {
+    fontSize: fontSize ? fontSize : '18px',
+    lineHeight: lineHeight ? lineHeight : '25px'
   }
 
-  console.log(size)
   console.log(fontSize)
+  console.log(style)
 
   return (
     <div className='container-foldable'>
       <div className='unfold-title'>
-        <p style={fontSize}>{title}</p>
+        <p style={style}>{title}</p>
         <span
           onClick={() => setUnfoldItem(!unfoldItem)}
         >
@@ -27,7 +28,7 @@ function FoldCard({title, item, unfoldItem, setUnfoldItem, size} ) {
 
       { unfoldItem ? (
       <div className='unfold-content' >
-        <p style={fontSize}>{item}</p>
+        <p style={style}>{item}</p>
       </div>
       ) : null
       }

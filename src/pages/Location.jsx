@@ -68,7 +68,6 @@ function Location() {
         <FoldCard
           title="Equipements"
           item={stringifiedArray(location.equipments)}
-          height="250px"
           unfoldItem={unfoldEquipment}
           setUnfoldItem={setUnfoldEquipment}
         />

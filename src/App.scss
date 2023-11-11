@@ -1,3 +1,4 @@
+@use './variables.scss' as variable;
 @use './components/Header.scss';
 @use './components/Footer.scss';
 @use './components/LocationCard.scss';
@@ -8,9 +9,10 @@
 @use './pages/About.scss';
 @use './pages/Location.scss';
 
+
 * {
   font-family: Montserrat;
-  color: #FF6060;
+  color: variable.$primary;
 }
 
 p {

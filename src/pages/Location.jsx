@@ -1,5 +1,7 @@
 
 import { useParams } from 'react-router-dom'
+import { useState } from 'react'
+
 import locations from '../data/locations.json'
 import Banner from '../components/Banner'
 import FoldCard from '../components/FoldCard'
@@ -9,6 +11,14 @@ import RatingScale from '../components/RatingScale'
 function Location() {
   const { locationId } = useParams()
   const location = locations.filter(location => location.id === locationId)[0]
+
+  const [unfoldDescription, setUnfoldDescription] = useState(false)
+  const [unfoldEquipment, setUnfoldEquipment] = useState(false)
+
+  const equipmentList = location.equipments.map(equipment =>
+    '${equipment} \n'
+    )
+
 
   return (
     <div>
@@ -25,8 +35,8 @@ function Location() {
             <p>{location.location}</p>
           </div>
           <div className='tags'>
-            {location.tags.map(tag =>
-              <p className='tag'>{tag}</p>
+            {location.tags.map((tag, index) =>
+              <p className='tag' key={`${tag}-${index}`}>{tag}</p>
             )}
 
           </div>
@@ -52,11 +62,15 @@ function Location() {
           title="Description"
           item={location.description}
           itemType="string"
+          unfoldItem={unfoldDescription}
+          setUnfoldItem={setUnfoldDescription}
         />
         <FoldCard
           title="Equipements"
           item={location.equipments}
           itemType="array"
+          unfoldItem={unfoldEquipment}
+          setUnfoldItem={setUnfoldEquipment}
         />
       </div>
     </div>

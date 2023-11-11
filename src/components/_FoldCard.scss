@@ -1,24 +1,25 @@
+@use '../variables.scss' as variable;
 
 .container-foldable {
   width: 100%;
   display: flex;
-  justify-content: flex-start;
-  border-radius: 10px;
-  background-color: #FF6060;
-  padding: 10px 20px 10px 10px;
-
-  color: white !important;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
-.unfold-desccription {
+.unfold-description {
   display: flex;
+  justify-content: space-between;
+  align-items: center;
   flex-grow: 1;
   width: 100%;
-  background: blue;
+  border-radius: 10px;
+  background-color: variable.$primary;
+  padding: 10px 20px 10px 10px;
 
   p {
-    color: black !important;
-    font-size: 28px;
+    color: white;
+    font-size: 18px;
     font-style: normal;
     font-weight: 500;
   }
@@ -26,5 +27,9 @@
 }
 
 .unfold-content {
+  width: 100%;
+  background: #F6F6F6;
+  padding: 30px 12px 53px 20px;
+  line-height: 25px;
 
 }

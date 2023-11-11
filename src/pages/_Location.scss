@@ -1,3 +1,4 @@
+@use '../variables.scss' as variable;
 
 
 .location-informations {
@@ -43,7 +44,7 @@
 
 .tag {
   color: white;
-  background-color: #FF6060 ;
+  background-color: variable.$primary ;
   border-radius: 10px;
   padding-inline: 30px;
   text-align: center;
@@ -78,7 +79,7 @@
   .owner-name {
     display: flex;
     flex-direction: column;
-    align-items: end;
+    align-items: flex-end;
   }
   p {
     text-align: right;

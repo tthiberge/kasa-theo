@@ -1,8 +1,10 @@
 
 
-function Banner( { height, src, alt } ) {
+function Banner( { height, text, src, alt } ) {
   return (
-    <img src={src} alt={alt} className='home-bg' style={{height: `${height}`}} />
+    <div className='banner-picture-text' style={{'background-image': `url(${src})`, height: `${height}`}} >
+      <p>{text}</p>
+    </div>
   );
 }
 

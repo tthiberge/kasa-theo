@@ -11,8 +11,11 @@ function Home() {
       <Banner
         height="223px"
         src={home_bg}
+        text="Chez vous, partout, ailleurs"
         alt="Landscape banner"
-      />
+      >
+
+      </Banner>
       <div className='subgrid'>
         <div className='locations-grid'>
           {locations.map(location =>

@@ -6,12 +6,15 @@ import Banner from '../components/Banner'
 
 
 function Home() {
+  const isMobile = window.innerWidth < 640
+  console.log(isMobile)
+
   return (
-    <div className='home_container' >
+    <div className='home-container' >
       <Banner
         height="223px"
         src={home_bg}
-        text="Chez vous, partout, ailleurs"
+        text={ isMobile ? "Chez vous, partout et ailleurs" : "Chez vous, \n partout et ailleurs"}
         marginTop="50px"
       />
       <div className='subgrid'>

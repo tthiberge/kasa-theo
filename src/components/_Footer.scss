@@ -9,6 +9,7 @@ footer {
   align-items: center;
   margin-top: 50px;
   padding-block: 66px 29px;
+  width: 100%;
 
   img {
     height: 40px !important;
@@ -21,5 +22,22 @@ footer {
     font-weight: 500;
     line-height: 142.6%; /* 34.224px */
     margin: 0px;
+  }
+}
+
+
+@media (max-width: 767.98px) {
+  footer {
+    padding-block: 66px 58px;
+    gap: 0px;
+    margin-top: 19px;
+
+    p {
+      white-space: normal;
+      width: 134px;
+      height: 46px;
+      font-size: 12px;
+      text-align: center;
+    }
   }
 }

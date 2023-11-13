@@ -24,11 +24,27 @@ p {
 
 #root {
   display: flex;
-  justify-content:center;
+  justify-content: center;
   width: 100%;
+}
+
+.top-container {
+  width: 100%;
+  max-width: 1240px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .global-container {
   width: 100%;
-  max-width: 1240px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+@media (max-width: 768px) {
+  .top-container {
+    padding-inline: 20px;
+  }
 }

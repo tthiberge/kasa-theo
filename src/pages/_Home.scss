@@ -1,4 +1,4 @@
-.home_container {
+.home-container {
   display: flex;
   flex-direction: column;
   justify-content: start;
@@ -30,4 +30,30 @@
 
 .link-item {
   text-decoration: none;
+}
+
+@media (max-width: 768px) {
+  .home-container {
+    gap: 22px;
+  }
+
+  .subgrid {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 0px;
+    border-radius: 25px;
+    background: none;
+    box-sizing: border-box;
+  }
+
+  .locations-grid {
+    grid-template-columns: 1fr;
+    row-gap: 20px;
+  }
+
+  .link-item {
+    text-decoration: none;
+  }
 }

@@ -13,7 +13,7 @@ header {
 
 .navbar {
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-end;
   align-items: center;
   gap: 57px;
 
@@ -27,6 +27,28 @@ header {
 
     &:focus {
       text-decoration: underline;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  header {
+    margin-top: 20px;
+    box-sizing: border-box;
+  }
+
+  .logo {
+    height: 47px;
+  }
+
+  .navbar {
+    gap: 26px;
+
+    .nav-item {
+      font-size: 14px;
+      text-transform: uppercase;
+      font-weight: 600;
+
     }
   }
 }

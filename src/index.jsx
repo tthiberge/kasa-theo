@@ -15,13 +15,15 @@ root.render(
   <React.StrictMode>
     <Router>
       <div className='global-container'>
-        <Header />
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/about" element={<About />} />
-          <Route path="/location/:locationId" element={<Location />} />
-          <Route path="*" element={<Error />} />
-        </Routes>
+        <div className='top-container'>
+          <Header />
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/about" element={<About />} />
+            <Route path="/location/:locationId" element={<Location />} />
+            <Route path="*" element={<Error />} />
+          </Routes>
+        </div>
         <Footer />
       </div>
     </Router>

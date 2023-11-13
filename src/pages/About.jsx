@@ -32,6 +32,8 @@ function About() {
   const [unfoldService, setUnfoldService] = useState(false)
   const [unfoldSecurite, setUnfoldSecurite] = useState(false)
 
+  const isMobile = window.innerWidth < 640
+  console.log(isMobile)
 
   return (
     <div className='about-container'>
@@ -47,32 +49,32 @@ function About() {
           item={"Les annonces postées sur Kasa garantissent une fiabilité totale. Les photos sont conformes aux logements, et toutes les informations sont régulièrement vérifiées par nos équipes."}
           unfoldItem={unfoldFiabilite}
           setUnfoldItem={setUnfoldFiabilite}
-          fontSize="24px"
-          lineHeight="30px"
+          fontSize={ isMobile ? "13px" : "24px" }
+          lineHeight="142%"
         />
         <FoldCard
           title="Respect"
           item={"La bienveillance fait partie des valeurs fondatrices de Kasa. Tout comportement discriminatoire ou de perturbation du voisinage entraînera une exclusion de notre plateforme."}
           unfoldItem={unfoldRespect}
           setUnfoldItem={setUnfoldRespect}
-          fontSize="24px"
-          lineHeight="30px"
+          fontSize={ isMobile ? "13px" : "24px" }
+          lineHeight="142%"
         />
         <FoldCard
           title="Service"
           item={"Nos équipes se tiennent à votre disposition pour vous fournir une expérience parfaite. N'hésitez pas à nous contacter si vous avez la moindre question."}
           unfoldItem={unfoldService}
           setUnfoldItem={setUnfoldService}
-          fontSize="24px"
-          lineHeight="30px"
+          fontSize={ isMobile ? "13px" : "24px" }
+          lineHeight="142%"
         />
         <FoldCard
           title="Sécurité"
           item={"La sécurité est la priorité de Kasa. Aussi bien pour nos hôtes que pour les voyageurs, chaque logement correspond aux critères de sécurité établis par nos services. En laissant une note aussi bien à l'hôte qu'au locataire, cela permet à nos équipes de vérifier que les standards sont bien respectés. Nous organisons également des ateliers sur la sécurité domestique pour nos hôtes."}
           unfoldItem={unfoldSecurite}
           setUnfoldItem={setUnfoldSecurite}
-          fontSize="24px"
-          lineHeight="30px"
+          fontSize={ isMobile ? "13px" : "24px" }
+          lineHeight="142%"
         />
 
 

@@ -1,5 +1,8 @@
 @use '../variables.scss' as variable;
 
+.location-container {
+  width: 100%;
+  }
 
 .location-informations {
   display: flex;

@@ -16,6 +16,8 @@ function Location() {
   const [unfoldDescription, setUnfoldDescription] = useState(false)
   const [unfoldEquipment, setUnfoldEquipment] = useState(false)
 
+  const isMobile = window.innerWidth < 640
+
   const stringifiedArray = (array) => {
     return array.map(element => (
         <p> {element} </p>
@@ -24,7 +26,7 @@ function Location() {
 
 
   return (
-    <div>
+    <div className='location-container'>
       <Carrousel
         src={location.cover}
         marginTop="50px"
@@ -68,12 +70,16 @@ function Location() {
           item={location.description}
           unfoldItem={unfoldDescription}
           setUnfoldItem={setUnfoldDescription}
+          fontSize={ isMobile ? "13px" : "18px" }
+          lineHeight="142%"
         />
         <FoldCard
           title="Equipements"
           item={stringifiedArray(location.equipments)}
           unfoldItem={unfoldEquipment}
           setUnfoldItem={setUnfoldEquipment}
+          fontSize={ isMobile ? "13px" : "18px" }
+          lineHeight="142%"
         />
       </div>
     </div>

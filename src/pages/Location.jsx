@@ -4,6 +4,7 @@ import { useState } from 'react'
 
 import locations from '../data/locations.json'
 import Carrousel from '../components/Carrousel'
+import Tag from '../components/Tag'
 import FoldCard from '../components/FoldCard'
 import RatingScale from '../components/RatingScale'
 
@@ -37,7 +38,10 @@ function Location() {
           </div>
           <div className='tags'>
             {location.tags.map((tag, index) =>
-              <p className='tag' key={`${tag}-${index}`}>{tag}</p>
+              <Tag
+                key={`${tag}-${index}`}
+                tag={tag}
+              />
             )}
 
           </div>

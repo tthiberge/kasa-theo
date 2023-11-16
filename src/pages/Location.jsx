@@ -16,7 +16,6 @@ function Location() {
   const [unfoldDescription, setUnfoldDescription] = useState(false)
   const [unfoldEquipment, setUnfoldEquipment] = useState(false)
 
-  const isMobile = window.innerWidth < 640
 
   const stringifiedArray = (array) => {
     return array.map(element => (
@@ -70,16 +69,14 @@ function Location() {
           item={location.description}
           unfoldItem={unfoldDescription}
           setUnfoldItem={setUnfoldDescription}
-          fontSize={ isMobile ? "13px" : "18px" }
-          lineHeight="142%"
+          itemType="location"
         />
         <FoldCard
           title="Equipements"
           item={stringifiedArray(location.equipments)}
           unfoldItem={unfoldEquipment}
           setUnfoldItem={setUnfoldEquipment}
-          fontSize={ isMobile ? "13px" : "18px" }
-          lineHeight="142%"
+          itemType="location"
         />
       </div>
     </div>

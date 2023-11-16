@@ -1,34 +1,70 @@
 import arrow_folded from '../data/arrow_back.png'
 import arrow_unfolded from '../data/arrow_front.png'
 
-function FoldCard({title, item, unfoldItem, setUnfoldItem, fontSize, lineHeight} ) {
+function FoldCard({title, item, unfoldItem, setUnfoldItem, itemType} ) {
+  const isMobile = window.innerWidth < 640
 
   const style = {
-    fontSize: fontSize ? fontSize : '18px',
-    lineHeight: lineHeight ? lineHeight : '25px'
-  }
+    location: {
+      desktop: {
+        title: {
+          fontSize: "18px",
+        },
+        content: {
+          fontSize: "18px",
+          padding: "30px 12px 53px 20px",
+        }
+      },
+      mobile: {
+        title: {
+          fontSize: "13px",
+        },
+        content: {
+          fontSize: "13px",
+          padding: "17px 7px 8px 12px",
+        }
+      }
+    },
+    about: {
+      desktop: {
+        title: {
+          fontSize: "24px",
+        },
+        content: {
+          fontSize: "24px",
+          padding: "27px 27px 19px 18px",
+        }
+      },
+      mobile: {
+        title: {
+          fontSize: "13px",
+        },
+        content: {
+          fontSize: "12px",
+          padding: "17px 7px 53px 12px",
+        }
+      }
+    },
 
-  console.log(fontSize)
-  console.log(style)
+  }
 
   return (
     <div className='container-foldable'>
       <div className='unfold-title'>
-        <p style={style}>{title}</p>
-        <span
-          onClick={() => setUnfoldItem(!unfoldItem)}
-        >
+        <p style={style[itemType][isMobile ? 'mobile' : 'desktop'].title}>{title}</p>
 
-          { unfoldItem ? (<img src={arrow_unfolded} alt="open message" />)
-            :
-            (<img src={arrow_folded} alt="open message" />
-          )}
-        </span>
+        <img
+        src={unfoldItem ? arrow_unfolded : arrow_folded}
+        className='arrow-fold'
+        onClick={() => setUnfoldItem(!unfoldItem)}
+        alt="open message"
+        />
       </div>
+
 
       { unfoldItem ? (
       <div className='unfold-content' >
-        <p style={style}>{item}</p>
+          <p style={style[itemType][isMobile ? 'mobile' : 'desktop'].content}>{item}</p>
       </div>
       ) : null
       }

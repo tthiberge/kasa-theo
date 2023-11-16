@@ -42,6 +42,7 @@
   justify-content: flex-start;
   align-items: center;
   gap: 10px;
+  flex-wrap: wrap;
 
 }
 
@@ -92,10 +93,69 @@
   display: flex;
   flex-direction: row;
   gap: 76px;
-
-
 }
 
 @media (max-width: 768px) {
 
+  .location-informations {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+
+  }
+
+  .geographical-information {
+
+    h1 {
+      font-size: 18px;
+    }
+
+    p {
+      font-size: 14px;
+    }
+  }
+
+  .min-width {
+    flex: 1 0 16px;
+  }
+
+  .owner-rating {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    width: 100%;
+
+  }
+
+  .owner-information {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    align-items: center;
+
+    img {
+      width: 32px;
+      height: 32px;
+    }
+
+    .owner-name {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-end;
+    }
+
+    p {
+      text-align: right;
+      font-size: 12px;
+
+    }
+  }
+
+  .location-container-foldable {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
 }

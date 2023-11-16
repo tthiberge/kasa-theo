@@ -5,10 +5,10 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  // height: revert;
 }
 
 .unfold-title {
+  position: relative;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -24,25 +24,30 @@
     font-weight: 500;
   }
 
-  span {
-    cursor: pointer;
-  }
+}
 
+.arrow-fold {
+  cursor: pointer;
+  height: 32px;
+  width: 32px;
+
+  position: absolute;
+  right: 20px;
+  top: 50%;
+  transform: translateY(-50%)
 }
 
 .unfold-content {
   display: flex;
   align-items: flex-start;
   background: #F6F6F6;
-  padding-inline: 20px 12px;
-  padding-block: 30px 53px;
   border-radius: 10px;
   height: 100%;
 
   p {
     font-style: normal;
     font-weight: 400;
-
+    line-height: 142.6%; /* 17.112px */
   }
 
 }

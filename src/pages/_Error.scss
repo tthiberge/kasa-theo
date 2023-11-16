@@ -30,3 +30,28 @@ line-height: 142.6%; /* 25.668px */
 text-decoration-line: underline;
 cursor: pointer;
 }
+
+@media (max-width: 768px) {
+  .error-container {
+    margin-block: 113px; // When two margins overlap, the largest is considered
+    gap: 113px;
+    align-items: center;
+    width: 100%;
+    max-width: none;
+  }
+
+  .error-404 {
+    width: 230px;
+    height: 99px;
+  }
+
+  .not-found {
+    text-align: center;
+    font-size: 18px;
+    font-weight: 600;
+  }
+
+  .error-to-home {
+    font-size: 14px;
+  }
+}

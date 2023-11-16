@@ -6,17 +6,17 @@ import Banner from '../components/Banner'
 
 
 function Home() {
-  const isMobile = window.innerWidth < 640
-  console.log(isMobile)
 
   return (
     <div className='home-container' >
       <Banner
         height="223px"
         src={home_bg}
-        text={ isMobile ? "Chez vous, partout et ailleurs" : "Chez vous, \n partout et ailleurs"}
+        text1={ "Chez vous, "}
+        text2={ "partout et ailleurs"}
         marginTop="50px"
       />
+
       <div className='subgrid'>
         <div className='locations-grid'>
           {locations.map(location =>

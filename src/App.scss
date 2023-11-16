@@ -45,6 +45,7 @@ p {
 
 @media (max-width: 768px) {
   .top-container {
+    box-sizing: border-box;
     padding-inline: 20px;
   }
 }

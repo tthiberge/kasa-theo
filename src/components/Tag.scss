@@ -2,6 +2,8 @@
 
 
 .tag {
+  display: flex;
+  align-items: center;
   color: white;
   background-color: variable.$primary ;
   border-radius: 10px;

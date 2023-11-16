@@ -27,7 +27,7 @@ function Location() {
   return (
     <div className='location-container'>
       <Carrousel
-        src={location.cover}
+        pictures={location.pictures}
         marginTop="50px"
       />
 

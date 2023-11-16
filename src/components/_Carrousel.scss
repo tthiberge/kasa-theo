@@ -1,17 +1,44 @@
 .carroussel-picture {
+  position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
-  object-fit: cover;
-  background-position: center;
   border-radius: 25px;
   width: 100%;
   height: 415px;
 
+  .carrousel-background {
+    border-radius: 25px;
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+  }
+}
+
+.arrow-prev {
+  position: absolute;
+  left: 23px;
+  cursor: pointer;
+}
+
+.arrow-next {
+  position: absolute;
+  right: 23px;
+  cursor: pointer;
 }
 
 @media (max-width: 768px) {
   .carroussel-picture {
     height: 255px;
+  }
+
+  .arrow-prev {
+    height: 24px;
+    left: 12px;
+  }
+
+  .arrow-next {
+    height: 24px;
+    right: 12px;
   }
 }

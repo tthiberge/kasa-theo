@@ -24,3 +24,10 @@
   background: variable.$primary ;
   border-radius: 10px;
 }
+
+@media (max-width: 768px) {
+  .location-item {
+    padding-bottom: 15px;
+    height: 255px;
+  }
+}

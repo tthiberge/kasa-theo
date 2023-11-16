@@ -1,13 +1,14 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
-import Home from './pages/Home';
-import About from './pages/About';
-import Location from './pages/Location';
-import Error from './pages/Error';
-import Header from './components/Header';
-import Footer from './components/Footer';
+
 import App from './App.scss';
+import About from './pages/About';
+import Error from './pages/Error';
+import Footer from './components/Footer';
+import Header from './components/Header';
+import Home from './pages/Home';
+import Location from './pages/Location';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 

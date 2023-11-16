@@ -1,14 +1,14 @@
 @use './variables.scss' as variable;
-@use './components/Header.scss';
-@use './components/Footer.scss';
-@use './components/LocationCard.scss';
 @use './components/Banner.scss';
 @use './components/Carrousel.scss';
-@use './components/Tag.scss';
 @use './components/FoldCard.scss';
+@use './components/Footer.scss';
+@use './components/Header.scss';
+@use './components/LocationCard.scss';
+@use './components/Tag.scss';
+@use './pages/About.scss';
 @use './pages/Error.scss';
 @use './pages/Home.scss';
-@use './pages/About.scss';
 @use './pages/Location.scss';
 
 

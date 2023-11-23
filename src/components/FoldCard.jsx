@@ -52,26 +52,24 @@ function FoldCard({title, item, unfoldItem, setUnfoldItem, itemType} ) {
     <div className='container-foldable'>
       <div className='unfold-title'>
         <p style={style[itemType][isMobile ? 'mobile' : 'desktop'].title}>{title}</p>
-
-        <img
-        src={unfoldItem ? arrow_unfolded : arrow_folded}
-        className='arrow-fold'
-        onClick={() => setUnfoldItem(!unfoldItem)}
-        alt="open message"
-        />
+          <div className='arrow-container'>
+            <img
+            src={arrow_folded}
+            className={ unfoldItem ? 'arrow rotate-left' : 'arrow rotate-right' }
+            onClick={() => setUnfoldItem(!unfoldItem)}
+            alt="open message"
+            />
+          </div>
       </div>
 
-
-      { unfoldItem ? (
-      <div className='unfold-content' >
-          <p style={style[itemType][isMobile ? 'mobile' : 'desktop'].content}>{item}</p>
-      </div>
-      ) : null
-      }
+        <div className={ unfoldItem ? 'unfold-text-container' : '' }>
+          <div className='animated-div' >
+              <p style={style[itemType][isMobile ? 'mobile' : 'desktop'].content}>{item}</p>
+          </div>
+        </div>
     </div>
 
-  )
+)
 }
-
 
 export default FoldCard

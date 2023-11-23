@@ -25,7 +25,6 @@ function Carroussel( { pictures, marginTop, marginBottom } ) {
   }
 
   const isMobile = window.innerWidth < 640
-  console.log(isMobile)
 
   return (
     <div className='carroussel-picture' style={{marginTop: `${marginTop}`, marginBottom: `${marginBottom}`}} >
@@ -40,7 +39,7 @@ function Carroussel( { pictures, marginTop, marginBottom } ) {
       {
         !isMobile ? <p className='text-on-carrousel'>{pictureIndex(pictureUrl) + 1} / {pictures.length}</p> : null
       }
-      
+
       <img
         src={arrow_next}
         className='arrow-next'

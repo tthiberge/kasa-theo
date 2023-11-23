@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/kasa-theo/static/css/main.20208385.css",
+    "main.js": "/kasa-theo/static/js/main.f2c5d9c5.js",
+    "static/media/about_bg.png": "/kasa-theo/static/media/about_bg.388a325a41a4341c7ba0.png",
+    "static/media/home_bg.png": "/kasa-theo/static/media/home_bg.7b295fcb71808167cd75.png",
+    "index.html": "/kasa-theo/index.html",
+    "main.20208385.css.map": "/kasa-theo/static/css/main.20208385.css.map",
+    "main.f2c5d9c5.js.map": "/kasa-theo/static/js/main.f2c5d9c5.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.20208385.css",
+    "static/js/main.f2c5d9c5.js"
+  ]
+}

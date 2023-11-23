@@ -1,5 +1,4 @@
 import arrow_folded from '../data/arrow_back.png'
-import arrow_unfolded from '../data/arrow_front.png'
 
 function FoldCard({title, item, unfoldItem, setUnfoldItem, itemType} ) {
   const isMobile = window.innerWidth < 640

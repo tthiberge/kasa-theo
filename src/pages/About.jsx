@@ -32,9 +32,6 @@ function About() {
   const [unfoldService, setUnfoldService] = useState(false)
   const [unfoldSecurite, setUnfoldSecurite] = useState(false)
 
-  const isMobile = window.innerWidth < 640
-  console.log(isMobile)
-
   return (
     <div className='about-container'>
       <Banner

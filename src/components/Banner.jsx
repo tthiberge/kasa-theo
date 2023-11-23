@@ -6,7 +6,7 @@ function Banner( { height, text1, text2, src, marginTop, marginBottom } ) {
   return (
     <div className='banner-picture-text' style={{backgroundImage: `url(${src})`, height: `${height}`, marginTop: `${marginTop}`, marginBottom: `${marginBottom}`}} >
       {
-        isMobile ? <p>{text1} <br />{text2}</p> : <p>{`${text1} ${text2}`}</p>
+        isMobile ? <p>{text1 ? text1 : ""} <br />{text2 ? text2 : ""}</p> : <p>{`${text1 ? text1 : ""} ${text2 ? text2 : ""}`}</p>
       }
     </div>
   );

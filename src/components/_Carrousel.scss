@@ -27,6 +27,14 @@
   cursor: pointer;
 }
 
+.text-on-carrousel {
+  position: absolute;
+  color: white;
+  bottom: 25px;
+  font-size: 18px;
+  font-weight: 500;
+}
+
 @media (max-width: 768px) {
   .carroussel-picture {
     height: 255px;

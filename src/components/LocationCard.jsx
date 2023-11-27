@@ -1,5 +1,4 @@
 function LocationCard({ title, pictures }) {
-  console.log(pictures);
   return (
     <div
       className="location-item-underlay" >

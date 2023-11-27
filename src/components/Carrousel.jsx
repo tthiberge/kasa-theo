@@ -3,7 +3,7 @@ import arrow_prev from '../data/arrow_prev.png'
 import arrow_next from '../data/arrow_next.png'
 
 
-function Carroussel( { pictures, marginTop, marginBottom } ) {
+function Carroussel( { pictures, marginTop } ) {
   const [pictureUrl, setPictureUrl] = useState(pictures[0])
 
   const pictureIndex = (url) => {

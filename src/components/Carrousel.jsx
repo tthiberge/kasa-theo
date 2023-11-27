@@ -29,23 +29,33 @@ function Carroussel( { pictures, marginTop, marginBottom } ) {
   return (
     <div className='carroussel-picture' style={{marginTop: `${marginTop}`, marginBottom: `${marginBottom}`}} >
       <img className="carrousel-background" src={pictureUrl} alt="background location" />
-      <img
-        src={arrow_prev}
-        className='arrow-prev'
-        onClick={() => prevPicture()}
-        alt="show previous picture"
-        />
-
       {
-        !isMobile ? <p className='text-on-carrousel'>{pictureIndex(pictureUrl) + 1} / {pictures.length}</p> : null
+        pictures.length > 1 ?
+        <img
+          src={arrow_prev}
+          className='arrow-prev'
+          onClick={() => prevPicture()}
+          alt="show previous picture"
+          />
+          : null
       }
 
-      <img
+      {
+        !isMobile && pictures.length > 1? <p className='text-on-carrousel'>{pictureIndex(pictureUrl) + 1} / {pictures.length}</p> : null
+      }
+
+
+      {
+        pictures.length > 1 ?
+        <img
         src={arrow_next}
         className='arrow-next'
         onClick={() => nextPicture()}
         alt="show next picture"
         />
+        : null
+      }
+
     </div>
   );
 }

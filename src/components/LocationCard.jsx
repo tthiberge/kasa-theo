@@ -1,7 +1,7 @@
 function LocationCard({ title, cover }) {
   return (
     <div
-      className="location-container" >
+      className="location-card-container" >
       <img
         className="location-item"
         src={cover}

@@ -33,7 +33,7 @@ function Carroussel( { pictures, marginTop, marginBottom } ) {
         src={arrow_prev}
         className='arrow-prev'
         onClick={() => prevPicture()}
-        alt="show previous picture"
+        alt="show previous"
         />
 
       {
@@ -44,7 +44,7 @@ function Carroussel( { pictures, marginTop, marginBottom } ) {
         src={arrow_next}
         className='arrow-next'
         onClick={() => nextPicture()}
-        alt="show next picture"
+        alt="show next"
         />
     </div>
   );

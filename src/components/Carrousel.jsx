@@ -27,14 +27,8 @@ function Carroussel( { pictures, marginTop } ) {
   const isMobile = window.innerWidth < 640
 
   return (
-    <div className='carroussel-picture' style={{marginTop: `${marginTop}`, marginBottom: `${marginBottom}`}} >
+    <div className='carroussel-picture' style={{marginTop: `${marginTop}`}} >
       <img className="carrousel-background" src={pictureUrl} alt="background location" />
-      <img
-        src={arrow_prev}
-        className='arrow-prev'
-        onClick={() => prevPicture()}
-        alt="show previous"
-        />
 
       {
         pictures.length > 1 ?
@@ -42,7 +36,7 @@ function Carroussel( { pictures, marginTop } ) {
           src={arrow_prev}
           className='arrow-prev'
           onClick={() => prevPicture()}
-          alt="show previous picture"
+          alt="show previous"
           />
           : null
       }

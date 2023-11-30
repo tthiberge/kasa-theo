@@ -27,6 +27,7 @@ function Home() {
             >
               <LocationCard
                 title={location.title}
+                pictures={location.pictures}
               />
             </Link>
             )}

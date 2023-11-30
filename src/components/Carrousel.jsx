@@ -3,7 +3,7 @@ import arrow_prev from '../data/arrow_prev.png'
 import arrow_next from '../data/arrow_next.png'
 
 
-function Carroussel( { pictures, marginTop, marginBottom } ) {
+function Carroussel( { pictures, marginTop } ) {
   const [pictureUrl, setPictureUrl] = useState(pictures[0])
 
   const pictureIndex = (url) => {
@@ -37,15 +37,32 @@ function Carroussel( { pictures, marginTop, marginBottom } ) {
         />
 
       {
-        !isMobile ? <p className='text-on-carrousel'>{pictureIndex(pictureUrl) + 1} / {pictures.length}</p> : null
+        pictures.length > 1 ?
+        <img
+          src={arrow_prev}
+          className='arrow-prev'
+          onClick={() => prevPicture()}
+          alt="show previous picture"
+          />
+          : null
       }
 
-      <img
+      {
+        !isMobile && pictures.length > 1? <p className='text-on-carrousel'>{pictureIndex(pictureUrl) + 1} / {pictures.length}</p> : null
+      }
+
+
+      {
+        pictures.length > 1 ?
+        <img
         src={arrow_next}
         className='arrow-next'
         onClick={() => nextPicture()}
         alt="show next"
         />
+        : null
+      }
+
     </div>
   );
 }

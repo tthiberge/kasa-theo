@@ -23,7 +23,7 @@ header {
     font-size: 24px;
     font-style: normal;
     font-weight: 500;
-    line-height: 142.6%; /* 34.224px */
+    line-height: 142.6%;
 
     &:focus {
       text-decoration: underline;
@@ -45,9 +45,9 @@ header {
     gap: 26px;
 
     .nav-item {
-      font-size: 14px;
+      font-size: 12px;
       text-transform: uppercase;
-      font-weight: 600;
+      font-weight: 500;
 
     }
   }

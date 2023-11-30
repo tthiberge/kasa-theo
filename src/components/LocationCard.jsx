@@ -1,16 +1,13 @@
-function LocationCard({ title, pictures }) {
+function LocationCard({ title, cover }) {
   return (
     <div
-      className="location-item-underlay" >
-      <li
+      className="location-container" >
+      <img
         className="location-item"
-        style={{
-        backgroundImage: `url(${pictures[0]})`,
-        objectFit: `cover`,
-        objectPosition: `bottom`
-      }}>
-        <p>{title}</p>
-      </li>
+        src={cover}
+        alt="location cover"
+      />
+        <p className="location-title">{title}</p>
     </div>
   );
 }

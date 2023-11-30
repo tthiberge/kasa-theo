@@ -11,6 +11,8 @@ Dans votre terminal en local, choisissez un dossier dans lequel vous souhaitez c
 
 Puis, lancer la commande `git clone git@github.com:tthiberge/kasa-theo.git`
 
+La branche principale est la branche: `master`
+
 Rendez vous dans le dossier nouvellement créé, installer les dépendances, puis lancer le serveur en mode développement:
 `npm install`
 `npm start`

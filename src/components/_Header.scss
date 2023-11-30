@@ -25,9 +25,10 @@ header {
     font-weight: 500;
     line-height: 142.6%;
 
-    &:focus {
-      text-decoration: underline;
-    }
+  }
+
+  a.active {
+    text-decoration: underline;
   }
 }
 
